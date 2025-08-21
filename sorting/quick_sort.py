@@ -1,3 +1,9 @@
+"""
+Quick Sort Algorithm
+Time Complexity: O(n log n) average, O(n^2) worst
+Space Complexity: O(log n)
+"""
+
 def quick_sort(arr):
     if len(arr) <= 1:
         return arr
@@ -8,6 +14,6 @@ def quick_sort(arr):
     return quick_sort(left) + middle + quick_sort(right)
 
 if __name__ == "__main__":
-    data = [9, 3, 7, 1, 5, 2]
+    data = [10, 7, 8, 9, 1, 5]
     print("Unsorted:", data)
     print("Sorted:", quick_sort(data))
